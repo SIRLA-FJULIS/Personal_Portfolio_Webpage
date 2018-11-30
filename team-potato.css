@@ -8,9 +8,52 @@
 	text-align:center;
 	padding-top:40px;
 }
+
 nav ul{
 	position:top;
 	background-color: green;
 	color: white;
 	padding: 15px;
+}
+
+
+.article{
+  margin: 0px auto;
+  text-align: center;
+}
+
+.slideshow-container{
+    width: 60%;
+    height: 100px;
+    margin: 0px auto;
+    text-align: center;
+}
+.slideshowul{
+    width: 80%;
+  list-style-type: none;
+  display: inline-block;
+  margin: 0px;
+  text-align: center;
+  padding: 0px;
+}
+
+.spot{
+    width: 13px;
+    height: 13px;
+    margin-top: 5px;
+    border-radius: 100%;
+    background-color: gray;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.spot:hover{
+  background-color: black;
+}
+
+.spot.prev{
+  float:left;
+}
+.spot.next{
+  float:right;
 }
