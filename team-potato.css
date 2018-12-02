@@ -8,6 +8,11 @@ body{
 	text-align: center;
 }
 
+embed{
+	position: absolute;
+	top: 0;
+}
+
 nav ul{
 	position:top;
 	background-color: green;
