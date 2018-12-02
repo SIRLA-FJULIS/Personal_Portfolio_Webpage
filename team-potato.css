@@ -1,12 +1,11 @@
 *{
 	box-sizing: border-box;
-	margin:0;
+	margin: 0;
+	padding: 0;
 }
-.intro{
-	height: 100vh;
-	background-color:red;
-	text-align:center;
-	padding-top:40px;
+
+body{
+	text-align: center;
 }
 
 nav ul{
@@ -16,12 +15,14 @@ nav ul{
 	padding: 15px;
 }
 
-
-.article{
-  margin: 0px auto;
-  text-align: center;
+.intro{
+	height: 100vh;
+	background-color:red;
+	text-align:center;
+	padding-top:40px;
 }
 
+/* slideshow */
 .slideshow-container{
     width: 60%;
     height: 100px;
@@ -29,12 +30,12 @@ nav ul{
     text-align: center;
 }
 .slideshowul{
-    width: 80%;
-  list-style-type: none;
-  display: inline-block;
-  margin: 0px;
-  text-align: center;
-  padding: 0px;
+	width: 80%;
+	list-style-type: none;
+	display: inline-block;
+	margin: 0px;
+	text-align: center;
+	padding: 0px;
 }
 
 .spot{
@@ -48,28 +49,37 @@ nav ul{
 }
 
 .spot:hover{
-  background-color: black;
+	background-color: black;
 }
 
 .spot.prev{
-  float:left;
+	float:left;
 }
 .spot.next{
-  float:right;
+	float:right;
+}
+/* ---------------- */
+
+.project{
+	text-decoration: none; 
+	display: inline-block;
+	height: 220px;
+	width: 280px;
+	margin: 40px 100px;
+}
+.project-pic {
+	/* 長跟寬不能用絕對的大小設定，比例會不對
+	width: 300px;
+	height: 200px;
+	*/ 
+	width: 300px;
+	height: auto;
+	/*邊框*/
+	border-style:solid;
+	border-color:#BBFFEE;
 }
 
-.project-pic {
-  width: 300px;
-  height: 200px;
-  /*邊框*/
-  border-style:solid;
-  border-color:#BBFFEE;
-}
-.project-tile{
-  float: left; 
-  margin-right: 100px; 
-} 
 .contact{
-  margin:0px;
+	margin:0px;
 }
 
