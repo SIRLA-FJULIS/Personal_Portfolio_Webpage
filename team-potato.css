@@ -45,26 +45,6 @@ nav ul{
 	padding: 0px;
 }
 
-.spot{
-    width: 13px;
-    height: 13px;
-    margin-top: 5px;
-    border-radius: 100%;
-    background-color: gray;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.spot:hover{
-	background-color: black;
-}
-
-.spot.prev{
-	float:left;
-}
-.spot.next{
-	float:right;
-}
 /* ---------------- */
 #projects{
 	background-color: #c8e69e;
