@@ -18,14 +18,14 @@ nav{
 }
 nav ul{
 	position: top;
-	background-color: #00B32C;
+	background-color:#85ec57;
 	color: white;
 	padding: 15px;
 }
 
 .intro{
 	height: 100vh;
-	background-color:#DB300C;
+	background-color:#fd5757;
 	text-align:center;
 	padding-top:300px;
 }
@@ -66,6 +66,10 @@ nav ul{
 	float:right;
 }
 /* ---------------- */
+#projects{
+	background-color: #c8e69e;
+}
+
 
 .project{
 	text-decoration: none; 
@@ -101,4 +105,3 @@ nav ul{
     margin: 40px 0;
   }
 }
-
