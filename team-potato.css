@@ -18,18 +18,17 @@ nav{
 }
 nav ul{
 	position: top;
-	background-color: green;
+	background-color: #00B32C;
 	color: white;
 	padding: 15px;
 }
 
 .intro{
 	height: 100vh;
-	background-color:red;
+	background-color:#DB300C;
 	text-align:center;
 	padding-top:300px;
 }
-
 /* slideshow */
 .slideshow-container{
     width: 60%;
@@ -73,7 +72,7 @@ nav ul{
 	display: inline-block;
 	height: 220px;
 	width: 280px;
-	margin: 40px 100px;
+	margin: 40px 125px;
 }
 .project-pic {
 	/* 長跟寬不能用絕對的大小設定，比例會不對
