@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: 'Noto Sans TC', sans-serif;
 }
 
 body{
@@ -15,23 +16,32 @@ embed{
 /*navbar固定在最上面*/
 nav{
 	position: fixed;
-	width:100%
+	width:100%;
 }
 
 nav ul{
 	position: top;
-	background-color: green;
+	background-color:#c8e69e;
 	color: white;
 	padding: 15px;
+	list-style: none;
+	text-align: right;
+}
+
+nav ul li{
+	display: inline-block;
+	margin-right: 50px;
+}
+nav ul li a{
+	text-decoration: none;
 }
 
 .intro{
 	height: 100vh;
-	background-color:red;
+	background-color:#c8e69e;
 	text-align:center;
 	padding-top:300px;
 }
-
 /* slideshow */
 .slideshow-container{
     width: 60%;
@@ -48,60 +58,68 @@ nav ul{
 	padding: 0px;
 }
 
-.spot{
-    width: 13px;
-    height: 13px;
-    margin-top: 5px;
-    border-radius: 100%;
-    background-color: gray;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.spot:hover{
-	background-color: black;
-}
-
-.spot.prev{
-	float:left;
-}
-.spot.next{
-	float:right;
-}
 /* ---------------- */
+#projects{
+	background-color: #85ec57;
+	padding-top: 50px;
+}
+
 
 .project{
 	text-decoration: none; 
 	display: inline-block;
-	height: 220px;
-	width: 280px;
-	margin: 40px 100px;
+	height: auto;
+	width: auto;
+	margin: 40px 150px;
+	/*邊框*/
+	border-style:solid;
+	border-color:#BBFFEE;
 }
 .project-pic {
 	/* 長跟寬不能用絕對的大小設定，比例會不對
 	width: 300px;
 	height: 200px;
 	*/ 
-	width: 300px;
+	width: 100%;
 	height: auto;
-	/*邊框*/
-	border-style:solid;
-	border-color:#BBFFEE;
+}
+
+#fjuli{
+	width:auto;
+	height: 180px;
+}
+
+#liser{
+	width:auto;
+	height: 180px;
 }
 
 .contact{
 	margin:0px;
+	background-color: #47d278;
 }
 
-@media only screen and (max-width: 500px) {
-  nav ul {
-    text-align: center;
-  }
-  nav ul li {
-    margin: 20px;
-  }
-  .project {
-    margin: 40px 0;
-  }
+
+.header{
+	padding: 100px 0 80px 0;
 }
 
+.profile-link{
+  display: inline-block;
+  margin: 45px 35px;
+  border: 2px solid #90C695;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background: #e0ebe8;
+  color: #008080; /*文字顏色*/
+  text-decoration: none; /*超連結底線刪掉*/
+}
+
+footer{
+	padding:40px 0;
+	line-height: 25px;
+	background-color: #fd5757;
+
+}
