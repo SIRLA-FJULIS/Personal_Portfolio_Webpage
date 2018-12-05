@@ -7,15 +7,17 @@
 body{
 	text-align: center;
 }
-
+/*測試*/
 embed{
 	position: absolute;
 	top: 0;
 }
+/*navbar固定在最上面*/
 nav{
 	position: fixed;
 	width:100%
 }
+
 nav ul{
 	position: top;
 	background-color: green;
