@@ -69,11 +69,12 @@ nav ul li a{
 	text-decoration: none; 
 	display: inline-block;
 	height: auto;
-	width: auto;
+	width: 278px;
 	margin: 40px 150px;
 	/*邊框*/
 	border-style:solid;
 	border-color:#BBFFEE;
+	background-color:white;
 }
 .project-pic {
 	/* 長跟寬不能用絕對的大小設定，比例會不對
@@ -86,12 +87,20 @@ nav ul li a{
 
 #fjuli{
 	width:auto;
-	height: 180px;
+	height:180px;
 }
 
 #liser{
 	width:auto;
-	height: 180px;
+	height:180px;
+}
+#irser{
+  width:auto;
+	height:180px;
+}
+#vetser{
+  width:auto;
+	height:180px;
 }
 
 .contact{
