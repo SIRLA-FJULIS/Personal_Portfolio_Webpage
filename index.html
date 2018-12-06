@@ -30,16 +30,6 @@
 			startChange();
 			//console.log(max);
 
-			function prev(){
-				$(".quotes").hide();
-				current -= 1;
-
-				if(current ==0){
-					current = max;
-				}
-				$(".quotes:nth-child(" + current + ")").fadeIn("slow");
-			}
-				
 			function next(){
 				$(".quotes").hide();
 				current += 1;
@@ -54,23 +44,7 @@
 				changeIt = setInterval(function(){next();}, 4000);
 			}
 			
-			function stoptChange(){
-				clearInterval(changeIt);
-			}
-			
-			$(".spot.prev").click(function(){
-				stoptChange();
-				prev();
-				startChange();
-			});
-			
-			$(".spot.next").click(function(){
-				stoptChange();
-				next();
-				startChange();
-			});
-		// your jQuery...music
-			// under is music
+
 		});
 	</script>
 </head>
