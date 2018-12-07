@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Noto Sans TC', sans-serif;
+	font-family: 'Noto Sans TC', sans-serif;/*字型*/
 }
 
 body{
@@ -70,36 +70,18 @@ nav ul li a{
 	display: inline-block;
 	height: auto;
 	width: 278px;
-	margin: 40px 150px;
+	margin: 40px 100px;
+  background-color:white;
 	/*邊框*/
 	border-style:solid;
 	border-color:#BBFFEE;
-	background-color:white;
 }
 .project-pic {
 	/* 長跟寬不能用絕對的大小設定，比例會不對
 	width: 300px;
 	height: 200px;
 	*/ 
-	width: 100%;
-	height: auto;
-}
-
-#fjuli{
 	width:auto;
-	height:180px;
-}
-
-#liser{
-	width:auto;
-	height:180px;
-}
-#irser{
-  width:auto;
-	height:180px;
-}
-#vetser{
-  width:auto;
 	height:180px;
 }
 

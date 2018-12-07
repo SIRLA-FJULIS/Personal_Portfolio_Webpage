@@ -4,7 +4,7 @@
 	<title>team-potato</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="team-potato.css">
-	<script src="jquery-3.3.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<style>
 		@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
 		@media only screen and (max-width: 500px) {
@@ -30,6 +30,16 @@
 			startChange();
 			//console.log(max);
 
+			function prev(){
+				$(".quotes").hide();
+				current -= 1;
+
+				if(current ==0){
+					current = max;
+				}
+				$(".quotes:nth-child(" + current + ")").fadeIn("slow");
+			}
+				
 			function next(){
 				$(".quotes").hide();
 				current += 1;
@@ -44,7 +54,23 @@
 				changeIt = setInterval(function(){next();}, 4000);
 			}
 			
-
+			function stoptChange(){
+				clearInterval(changeIt);
+			}
+			
+			$(".spot.prev").click(function(){
+				stoptChange();
+				prev();
+				startChange();
+			});
+			
+			$(".spot.next").click(function(){
+				stoptChange();
+				next();
+				startChange();
+			});
+		// your jQuery...music
+			// under is music
 		});
 	</script>
 </head>
@@ -77,19 +103,19 @@
 	<div id="projects">
 		<h2>輔仁大學圖書資訊學系服務隊資訊</h2>
 		<a id="fjulia" href= "http://web.lins.fju.edu.tw/" target="_blank" class="project">
-			<img id="fjuli" class="project-pic" src="https://i.imgur.com/HCF2lF4.png" alt="project">
+			<img id="fjuli" class="project-pic" src=" https://drive.google.com/uc?id=13VbtRuI5FO5MEvLA9q3fffGDnajpeKdb&export=download" alt="project">
 			<p class="project-title">輔仁大學圖書資訊學系系網</p>
 		</a>
 		<a href= "http://service.lins.fju.edu.tw/" target="_blank" class="project">
-			<img id="liser"class="project-pic" src="https://i.imgur.com/ZpnTHWE.jpg" alt="project">
+			<img id="liser"class="project-pic" src="https://drive.google.com/uc?id=1j1vW_LqNZpHPIMeWxa2KrF-edq-u-y0V&export=download" alt="project">
 			<div class="project-tile">圖書館服務隊</div>
 		</a>
 		<a href= "http://loveread.lins.fju.edu.tw/" target="_blank" class="project">
-			<img img id="irser"class="project-pic" src="https://i.imgur.com/5jAAyTt.png" alt="project">
+			<img img id="irser"class="project-pic" src="https://drive.google.com/uc?id=12UCSzgtbs-pg4SKR-fsHbSmyNFu3Nf8-&export=download" alt="project">
 			<div class="project-tile">愛閱服務隊</div>
 		</a>
 		<a href= "http://fjilinsvolunteeroftheeducationteam.blogspot.com/" target="_blank" class="project">
-			<img id="vetser"class="project-pic" src="https://i.imgur.com/EBJ888O.jpg" alt="project">
+			<img id="vetser"class="project-pic" src="https://drive.google.com/uc?id=178Pn5qNqc2FpZIrSaO0oUN__Uq9BO3GA&export=download" alt="project">
 			<div class="project-tile">志工教育服務隊</div>
 		</a>
 	</div>
